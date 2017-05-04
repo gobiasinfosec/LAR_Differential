@@ -41,8 +41,8 @@ $Compare = Import-Csv -Path $LarOutput -Header "Workstation", "Member"
 if(!(Test-Path $Baseline)){$Compare | Export-Csv -NoTypeInformation $Baseline}
 
 # Compare to baseline and output differences
-$BaseCompare = Import-Csv -Path $Baseline -Header "Worksation", "Member"
-Compare-Object $BaseCompare $Compare -Property "Worksation", "Member" -PassThru| Export-Csv $Diff -NoTypeInformation
+$BaseCompare = Import-Csv -Path $Baseline -Header "Workstation", "Member"
+Compare-Object $BaseCompare $Compare -Property "Workstation", "Member" -PassThru| Export-Csv $Diff -NoTypeInformation
 
 # Rename the old baseline to baseline.csv.old and the new export to baseline.csv
 Copy-Item $Baseline "$Baseline.old"
