@@ -1,6 +1,6 @@
 # LAR Differential
 
-This tool is designed to pull a list of machines from AD and then enumerate their LAR permissions. This should be run a either a DOMAIN or WORKSTATION Admin account.
+This tool is designed to pull a list of machines from AD and then enumerate their LAR permissions. This should be run with either a DOMAIN or WORKSTATION Admin account.
 
 After it runs, the full output can be found at your $Baseline variable location, any changes will be found in the csv at your $Diff file location.
 
