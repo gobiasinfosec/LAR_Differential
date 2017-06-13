@@ -4,7 +4,7 @@ This tool is designed to pull a list of machines from AD and then enumerate thei
 
 After it runs, the full output can be found at your $Baseline variable location, any changes will be found in the csv at your $Diff file location.
 
-###Instructions
+### Instructions
 
 Edit the variables on lines 5-9 of the script per your needs. 
 
